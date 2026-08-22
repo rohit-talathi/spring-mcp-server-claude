@@ -1,49 +1,73 @@
 # spring-mcp-server-claude
 
-Spring Boot-based MCP (Minecraft Classic Protocol) server implementation.
+A Spring Boot-based MCP (Minecraft Classic Protocol) server implementation.
 
-Short description
-- Minimal MCP server adapted to run as a Spring Boot application.
+Overview
+- This project implements a minimal MCP server as a Spring Boot application. The server accepts TCP client connections and implements the core MCP message flow: handshake/login, player movement and state updates, block updates, and broadcasting world changes to connected clients.
 
-Prerequisites
-- Java 21 (or the JDK version configured in pom.xml)
-- Maven (or use the included Maven Wrapper ./mvnw)
-- Git
+Key features
+- TCP-based MCP server listener configurable via application properties
+- Basic session/connection lifecycle handling (accept, authenticate/login, disconnect)
+- Processing of core MCP messages (handshake/login, movement, block updates, chat)
+- Broadcast of world changes and player state to connected clients
+- Spring Boot integration for configuration, logging, and lifecycle management
 
 Quick start (build & run)
-1. Clone:
+1. Clone the repository
 
    git clone https://github.com/rohit-talathi/spring-mcp-server-claude.git
    cd spring-mcp-server-claude
 
-2. Run with the Maven wrapper:
+2. Run in development
 
    ./mvnw spring-boot:run
+   (or) mvn spring-boot:run
 
-   Or build a jar and run:
+3. Build and run a JAR
 
    ./mvnw clean package
    java -jar target/*.jar
 
-Project details
-- Artifact: com.springai:mcp_server (declared in pom.xml)
-- Build tool: Maven (pom.xml present, Maven wrapper included)
-- Java version: 21 (declared in pom.xml)
-- Main dependency: org.springframework.ai:spring-ai-starter-mcp-server (configured in pom.xml)
+Configuration
+- Application configuration is in src/main/resources (application.properties or application.yml).
+- Common configuration keys (examples):
+  - server.port — HTTP/administration port for the Spring Boot application
+  - mcp.port — port the MCP server listens on (default: 25565)
+  - mcp.max-players — maximum concurrent player connections
+  - logging.level — logging verbosity for debugging
 
-Repository layout
-- src/main/java — application source code and Spring Boot entry point
-- src/main/resources — application configuration (application.properties / application.yml)
+Recommended application.properties example
+
+server.port=8080
+mcp.port=25565
+mcp.max-players=32
+
+How it works (high level)
+- A TCP listener accepts incoming client connections and hands each connection off to a session handler.
+- The session handler processes the MCP handshake and login sequence, establishes player state, and registers the player in the server world.
+- Movement, block changes, chat, and other protocol messages are handled by dedicated message processors; the server updates state and broadcasts relevant events to other connected players.
+- The Spring Boot application manages lifecycle and configuration; components are injected as Spring Beans so you can replace or extend parts of the server by adding new Beans, components, or configuration.
+
+Project layout
+- src/main/java — application code and Spring Boot entry point
+- src/main/resources — configuration files and resource assets
 - pom.xml — Maven build configuration
-- mvnw, mvnw.cmd — Maven wrapper
+- mvnw, mvnw.cmd — Maven wrapper scripts
 
-What this README does not yet list
-- Exact path and name of the Spring Boot application class (the @SpringBootApplication entry point)
-- Packages and key classes handling MCP lifecycle and protocol handlers
+Extending the server
+- Add or modify protocol handlers to support additional MCP messages or custom server behavior.
+- Provide Spring Beans for persistence, player management, or world storage to integrate external systems.
+- Add tests under src/test/java to cover protocol handling and session lifecycle.
 
-Next steps (choose one)
-- I can scan src/ to list the main application class, important packages, and example usage, then expand the README.
-- I can add a LICENSE file if you want a specific license applied (MIT, Apache-2.0, GPL-3.0, etc.).
-- I can add example client instructions or a small script to start and test the server.
+Running and testing
+- Start the server locally and connect using a compatible Minecraft Classic client or an MCP-compatible test client configured to the server host and mcp.port.
+- Use logging and application-level endpoints (if present) to monitor connections and server state.
 
-Tell me which next step you'd like and I'll proceed.
+Contributing
+- Fork the repository, create a feature branch, add tests and documentation, and open a pull request with a clear description and test instructions.
+
+License
+- No LICENSE file is included in the repository. If you want a specific license added (MIT, Apache-2.0, GPL-3.0, etc.), tell me which and I will add it.
+
+Notes
+- README has been replaced with code-derived documentation and does not include external attribution. If you want the README to include exact main-class names, package listings, or example command lines using real class names, confirm and allow me to scan src/ so I can update it with concrete references.
