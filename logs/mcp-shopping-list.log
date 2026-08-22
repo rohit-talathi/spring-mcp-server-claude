@@ -1,0 +1,52 @@
+2026-08-22T09:49:03.167+05:30  INFO 13360 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Starting McpServerApplication using Java 21.0.6 with PID 13360 (E:\Rohit Project -Study\AI Project\mcp_server\mcp_server\target\classes started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T09:49:03.176+05:30  INFO 13360 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T09:49:05.413+05:30  INFO 13360 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T09:49:05.422+05:30  INFO 13360 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T09:49:05.424+05:30  INFO 13360 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T09:49:05.427+05:30  INFO 13360 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T09:49:05.428+05:30  INFO 13360 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T09:49:05.772+05:30  INFO 13360 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Started McpServerApplication in 3.681 seconds (process running for 6.054)
+2026-08-22T09:49:10.680+05:30  INFO 9980 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Starting McpServerApplication using Java 21.0.6 with PID 9980 (E:\Rohit Project -Study\AI Project\mcp_server\mcp_server\target\classes started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T09:49:10.686+05:30  INFO 9980 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T09:49:12.425+05:30  INFO 9980 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T09:49:12.427+05:30  INFO 9980 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T09:49:12.428+05:30  INFO 9980 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T09:49:12.430+05:30  INFO 9980 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T09:49:12.431+05:30  INFO 9980 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T09:49:12.742+05:30  INFO 9980 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Started McpServerApplication in 3.003 seconds (process running for 4.484)
+2026-08-22T09:49:17.231+05:30  INFO 13360 --- [mcp_server] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-08-22T09:49:18.927+05:30  INFO 9980 --- [mcp_server] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-08-22T09:49:29.061+05:30  INFO 11856 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Starting McpServerApplication using Java 21.0.6 with PID 11856 (E:\Rohit Project -Study\AI Project\mcp_server\mcp_server\target\classes started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T09:49:29.072+05:30  INFO 11856 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T09:49:30.775+05:30  INFO 11856 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T09:49:30.778+05:30  INFO 11856 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T09:49:30.778+05:30  INFO 11856 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T09:49:30.780+05:30  INFO 11856 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T09:49:30.781+05:30  INFO 11856 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T09:49:31.061+05:30  INFO 11856 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Started McpServerApplication in 2.849 seconds (process running for 4.139)
+2026-08-22T09:49:35.527+05:30  INFO 11856 --- [mcp_server] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-08-22T09:49:56.885+05:30  INFO 3404 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Starting McpServerApplication using Java 21.0.6 with PID 3404 (E:\Rohit Project -Study\AI Project\mcp_server\mcp_server\target\classes started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T09:49:56.890+05:30  INFO 3404 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T09:49:58.980+05:30  INFO 3404 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T09:49:58.982+05:30  INFO 3404 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T09:49:58.982+05:30  INFO 3404 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T09:49:58.984+05:30  INFO 3404 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T09:49:58.985+05:30  INFO 3404 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T09:49:59.404+05:30  INFO 3404 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Started McpServerApplication in 3.58 seconds (process running for 6.308)
+2026-08-22T10:10:48.032+05:30  INFO 8168 --- [mcp_server] [main] c.s.m.McpServerApplicationTests          : Starting McpServerApplicationTests using Java 21.0.6 with PID 8168 (started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T10:10:48.035+05:30  INFO 8168 --- [mcp_server] [main] c.s.m.McpServerApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T10:10:50.028+05:30  INFO 8168 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T10:10:50.032+05:30  INFO 8168 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T10:10:50.032+05:30  INFO 8168 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T10:10:50.035+05:30  INFO 8168 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T10:10:50.037+05:30  INFO 8168 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T10:10:50.382+05:30  INFO 8168 --- [mcp_server] [main] c.s.m.McpServerApplicationTests          : Started McpServerApplicationTests in 3.221 seconds (process running for 5.979)
+2026-08-22T14:39:00.473+05:30  INFO 6176 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Starting McpServerApplication using Java 21.0.6 with PID 6176 (E:\Rohit Project -Study\AI Project\mcp_server\mcp_server\target\classes started by Admin in E:\Rohit Project -Study\AI Project\mcp_server\mcp_server)
+2026-08-22T14:39:00.584+05:30  INFO 6176 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-08-22T14:39:09.291+05:30  INFO 6176 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-08-22T14:39:09.294+05:30  INFO 6176 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-08-22T14:39:09.295+05:30  INFO 6176 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-08-22T14:39:09.296+05:30  INFO 6176 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-08-22T14:39:09.298+05:30  INFO 6176 --- [mcp_server] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-08-22T14:39:09.869+05:30  INFO 6176 --- [mcp_server] [main] c.s.mcp_server.McpServerApplication      : Started McpServerApplication in 11.083 seconds (process running for 14.978)
+2026-08-22T14:39:13.236+05:30  INFO 6176 --- [mcp_server] [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
