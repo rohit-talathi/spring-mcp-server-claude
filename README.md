@@ -1,42 +1,47 @@
 # spring-mcp-server-claude
 
-This repository contains a Spring-based MCP (Minecraft Classic Protocol) server project.
+Spring-based MCP (Minecraft Classic Protocol) server implemented using Spring Boot and the Spring AI MCP starter.
 
-Origin and attribution
-- This project was created using the tutorial "Creating an MCP server" by Soham Kamani as a reference: https://www.sohamkamani.com/java/creating-an-mcp-server/
-- All credit for the original tutorial and explanations goes to Soham Kamani. The code and structure in this repository adapt concepts from that tutorial.
+Project summary
+- Artifact: com.springai:mcp_server
+- Build tool: Maven (mvn) with included Maven Wrapper (./mvnw)
+- Java: 21
+- Purpose: Provide a minimal MCP server implementation adapted for Spring Boot using the spring-ai-starter-mcp-server dependency declared in pom.xml.
 
-Getting started
+Quick start
 1. Clone the repository:
 
    git clone https://github.com/rohit-talathi/spring-mcp-server-claude.git
+   cd spring-mcp-server-claude
 
-2. Open the project in your IDE (IntelliJ IDEA, Eclipse, VS Code) and run the main application class (the one annotated with `@SpringBootApplication`).
+2. Run with the Maven Wrapper (recommended):
 
-3. Build and run from the command line (examples):
+   ./mvnw spring-boot:run
 
-- If this project uses Maven:
+   Or with a local Maven installation:
 
-  mvn clean package
-  java -jar target/*.jar
+   mvn spring-boot:run
 
-- If this project uses Gradle:
+3. Build a runnable JAR and run it:
 
-  ./gradlew bootRun
+   ./mvnw clean package
+   java -jar target/*.jar
 
-Adjust the commands above to match the build tool used in this repository.
+Notes about the codebase
+- Build configuration is in pom.xml. The project declares the dependency org.springframework.ai:spring-ai-starter-mcp-server and imports the spring-ai BOM.
+- Look under src/main/java for the Spring application entry point (the class annotated with `@SpringBootApplication`). That class starts the Spring context and boots the MCP server components provided by the starter.
+- If you want me to add exact paths or list the main classes and packages I can scan src/ and update this README with more concrete references.
 
-Project structure
-- See the `src/` directory for application code and configuration.
-- The implementation follows the tutorial's approach and is adapted to use Spring where applicable.
+Attribution
+- This repository was created with reference to the tutorial "Creating an MCP server" by Soham Kamani: https://www.sohamkamani.com/java/creating-an-mcp-server/
 
-Notes
-- The repository intentionally references Soham Kamani's tutorial as the guiding resource. If you need additional attribution text or licensing details, let me know which license you prefer and I can add a LICENSE file.
+License
+- No LICENSE file detected in the repository. If you want a license added (MIT, Apache-2.0, GPL-3.0, etc.), tell me which one and I will add it.
 
 What I changed
-- Updated README.md to include attribution to the tutorial and basic usage instructions.
+- Replaced the README contents with a concise project summary, build/run instructions, and attribution.
 
-Next steps I can take for you
-- Inspect the repo to detect whether it uses Maven or Gradle and update the README with exact build/run commands.
-- Add example configuration, environment variables, or sample commands to connect to the MCP server.
-- Add a LICENSE.md or CONTRIBUTING.md if you want.
+Next steps I can take
+- Inspect src/ to list the main application class, important packages, and example usage, then expand the README.
+- Add a LICENSE file and update copyright/attribution wording.
+- Add example client instructions or a small script to start and test the server.
